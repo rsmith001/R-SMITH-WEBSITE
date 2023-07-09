@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>SERVICES | R SMITH</title>
+</head>
+<body class="service-page-body">
+
+        <nav class="home-nav">
+                <h1><a href="home.html" class="logo">RSmith</a></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://shorturl.at/zEST7" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://shorturl.at/vMU02"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://shorturl.at/qAEI5" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://shorturl.at/bfMP6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+
+
+
+
+
+
+
+    <section class="updates">
+        <span>TEXT ME! <br> (809) 397 6129</span>
+        <div class="divider"></div>
+        <h1>GET UPDATES</h1>
+        <form action="https://formsubmit.co/https://formsubmit.co/el/zopiyu" method="POST">
+            <label for="first-name">
+                FIRST NAME
+                <input id="first-name" name="first-name" placeholder="First Name" required type="text">
+            </label>
+
+            <label for="last-name">
+                LAST NAME
+                <input id="last-name" name="last-name" placeholder="Last Name" required type="text">
+            </label>
+
+            <label for="email">
+                EMAIL
+                <input id="email" name="email" placeholder="Email" required type="email">
+            </label>
+            <textarea name="comment" id="comment" placeholder="leave your comment here"></textarea>
+            <button id="subscribe" type="subscribe" value="SUBSCRIBE">SUBSCRIBE</button>
+
+        </form>
+
+        <a target="_blank" href="https://paypal.me/shop32online?country.x=DO&locale.x=en_US"><button>SUPPORT ME</button></a>
+
+    </section>
+
+    <div class="footer">
+        <div class="rights">
+            <a href=""><p>all rights reserved</p></a>
+        </div>
+        <div class="icons">
+            <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://shorturl.at/zEST7" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://shorturl.at/vMU02"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://shorturl.at/qAEI5" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://shorturl.at/bfMP6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="privacy">
+            <p><a href="privacy.html">privacy and policy</a></p>
+        </div>
+    </div>
+
+    <!------------Java Script to toggle Menu------------->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
