@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>HOME | R SMITH</title>
 </head>
-<body>
-    <section class="header" id=""header>
-        <nav>
-                <h1><a href="" class="logo">RSmith</a></h1>
+<body class="home-page-body">
+    <section>
+        <nav class="home-nav">
+                <h1><a href="home.html" class="logo">RSmith</a></h1>
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="#header">HOME</a></li>
-                    <li><a target="_blank" href="about.html">ABOUT</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#home">SERVICES</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -32,15 +32,33 @@
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <div class="main-page-text">
-            <h3>R SMITH, <br/>WELCOME TO MY WORLD!</h3>
-            <P>Auteur, compositeur, chanteur et musicien, R Smith baigne depuis son enfance dans l’univers musical.<br/> De la chaire de l’église de son père à The Voice Dominicana aujourd’hui, Jean Ricard Smith,<br/> de son vrai nom, ne souhaite qu’une chose : vivre pleinement de sa passion. <br/> Le chanteur s’est confié, le temps d’une entrevue, à Ticket Magazine. <br/><span>à lire sur</span> <a target="_blank" href="https://shorturl.at/jrsM0"><i>Le Nouveliste...</i></a></P>
+        <div class="home-page">
+            
+            <div class="home-page-content">
+                <div class="home-page-image">
+                    <img src="images/about-2.jpg" alt="">
+                </div>
+                <div class="home-page-text">
+                    <h3>R SMITH, <br/>WELCOME TO MY WORLD!</h3>
+                    <P>Auteur, compositeur, chanteur et musicien, R Smith baigne depuis son enfance dans 
+                        l’univers musical.
+                        <br/> 
+                        De la chaire de l’église de son père à The Voice Dominicana aujourd’hui, 
+                        Jean Ricard Smith, de son vrai nom, ne souhaite qu’une chose : vivre pleinement 
+                        <br/> 
+                        de sa passion. Le chanteur s’est confié, le temps d’une entrevue, à Ticket Magazine. 
+                        <br/>
+                        <span>à lire sur</span> <a target="_blank" href="https://shorturl.at/jrsM0">
+                            <i>Le Nouveliste...</i></a></P>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!------------video section------------->
 
-    <section class="video-section">
+    <section class="the-voice-section">
         <h1>THE VOICE DOMINICANA</h1>
         <div class="videos">
             <div class="video-1">
@@ -126,19 +144,19 @@
         <form action="">
             <label for="first-name">
                 FIRST NAME
-                <input required type="text">
+                <input id="first-name" required type="text">
             </label>
 
             <label for="last-name">
                 LAST NAME
-                <input required type="text">
+                <input id="last-name" required type="text">
             </label>
 
             <label for="email">
                 EMAIL
-                <input required type="email">
+                <input id="email" required type="email">
             </label>
-            <button type="subscribe" value="SUBSCRIBE">SUBSCRIBE</button>
+            <button id="subscribe" type="subscribe" value="SUBSCRIBE">SUBSCRIBE</button>
         </form>
 
         <a target="_blank" href="https://paypal.me/shop32online?country.x=DO&locale.x=en_US"><button>SUPPORT ME</button></a>

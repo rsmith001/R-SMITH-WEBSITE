@@ -9,7 +9,9 @@ html {
     scroll-snap-type: proximity;
 }
 
-body::before {
+/*---------HOME PAGE STYLING START-----------*/
+
+.home-page-body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -23,15 +25,8 @@ body::before {
     background-position: center;
   }
 
-/*header styling*/
-.header {
-    width: 100%;
-    min-height: 100vh;  
-    overflow: auto;
-}
-
 /*nav styling start*/
-    nav {
+    .home-nav {
         width: 100%;
         display: flex;
         align-items: center;
@@ -43,7 +38,7 @@ body::before {
         background-color: rgba(0, 0, 0, 0.937);
     }
 
-    nav h1 {
+    .home-nav h1, .about-nav h1 {
         font-size: 3rem;
         background: linear-gradient(to right, rgba(173, 0, 247, 0.4), rgba(255, 0, 247, 0.7));
         -webkit-background-clip: text;
@@ -57,7 +52,7 @@ body::before {
 
     }
 
-    nav h1 a,
+    .home-nav h1 a,
      .nav-links ul li a,
       .icons a,
       .musics a,
@@ -66,7 +61,7 @@ body::before {
     }
 
 
-    nav .nav-links ul {
+.nav-links ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -121,34 +116,66 @@ body::before {
 }
 
 
-.fa-brands {
+.home-nav  .fa-brands, .about-nav .fa-brands {
     color: #fff;
     font-size: 1.8rem;
     
 }
 /*nav styling end*/
 
-/*main-page-text start*/
-.main-page-text {
+/*home-page start*/
+.home-page {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-top: 50px;
 }
 
-.main-page-text h3 {
+.home-page-content {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-image {
+    width: 550px;
+    height: 500px;
+    padding: 10px;
+    background-color:#ffffff;
+    border-radius: 3px;
+}
+
+.home-page-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.home-page-text {
+    margin-left: 50px;
+    padding: 10px;
+    width: 700px;
+
+
+}
+
+
+.home-page-text h3 {
     text-align:center;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 10px;
     word-spacing: 5px;
 }
 
-.main-page-text p {
+.home-page-text p {
     text-align:center;
     color: #fff;
     font-size: 1.2rem;
@@ -156,12 +183,12 @@ body::before {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.main-page-text p span {
+.home-page p span {
     color:#fff;
     font-size: 1.2rem;
 }
 
-.main-page-text p a {
+.home-page p a {
     color: #ff00aa;
     font-weight: bold;
     font-size: 20px;
@@ -169,11 +196,11 @@ body::before {
     padding-left: 30px;
 
 }
-/*main-page-text end*/
+/*home-page end*/
 
-/*video-section start*/
+/*the-voice-section start*/
 
-.video-section {
+.the-voice-section {
     width: 100%;
     min-height: 100vh;
     border-bottom: 2px solid rgb(152, 149, 149) ;
@@ -185,8 +212,7 @@ body::before {
     padding-bottom: 30px;
 }
 
-
-.video-section h1 {
+.the-voice-section h1 {
     text-align: center;
     font-size: 2em;
     font-weight: 700;
@@ -195,7 +221,7 @@ body::before {
     padding-top: 40px;
 }
 
-.video-section .videos {
+.the-voice-section .videos {
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -222,7 +248,7 @@ iframe,
     gap: 30px;
 }
 
-.video-section h2 {
+.the-voice-section h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
@@ -241,7 +267,7 @@ cursor: pointer;
 
 /*---------video-section end------------*/
 
-nav .fa-solid {
+.home-nav .fa-solid, .about-nav .fa-solid {
     display: none;
 }
 
@@ -462,14 +488,12 @@ form input {
 }
 
 
-
-
 @media(max-width: 700px) {
-    nav {
+    .home-nav, .about-nav {
         justify-content: space-between;
         padding: 10px 4%;
     }
-    nav h1 {
+    .home-nav h1, .about-nav h1 {
         font-size: 2rem;
         margin-left: 10px;
 
@@ -479,7 +503,7 @@ form input {
         margin: 0 0 0 10px;
         flex-direction: row;
         justify-content: space-around;
-        gap: 20px;
+        gap: 30px;
     }
 
 
@@ -494,7 +518,7 @@ form input {
         transition: 0.5s;
     }
 
-    nav .nav-links ul {
+   .nav-links ul {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -503,7 +527,7 @@ form input {
         gap: 40px;
 }
 
-    nav .fa-solid {
+    .home-nav .fa-solid, .about-nav .fa-solid {
     display: block;
     color: rgba(188, 59, 184, 0.7);
     cursor: pointer;
@@ -512,44 +536,65 @@ form input {
     margin-top: 10px;
 }
 
-nav .fa-bars {
+.home-nav .fa-bars, .about-nav .fa-bars {
     margin-left: 50px;
     color: rgba(188, 59, 184, 0.7);
     font-size: 2rem;
 }
 
-    .main-page-text {
-        gap: 30px;
+    .home-page {
+        padding-top: 30px;
     }
 
+    .home-page-content {
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 20px;
+    }
+
+    .home-page-image {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        background-color:#ffffff;
+        border-radius: 3px;
+    }
     
-    .main-page-text h3 {
+    
+    .home-page-text {
+        margin-left: 20px;
+        padding: 5px;
+        width: 400px;
+    
+    }
+    
+    .home-page-text h3 {
         font-size: 1.1rem;
         word-spacing: 5px;
         letter-spacing: 2px;
+        padding-bottom: 10px;
     }
 
-    .main-page-text p {
+    .home-page-text p {
      word-spacing: 5px;
-     padding: 0 20px;
     }
 
-    .video-section {
+    .the-voice-section {
         gap: 10px;
         z-index: -1;
     }
 
-    .video-section .videos {
+    .the-voice-section .videos {
         padding-top: 10px;
         margin-top: 0;
     }
 
-    .video-section .videos, .video-2 {
+    .the-voice-section .videos, .video-2 {
         flex-direction: column;
         margin: 0 auto;
     }
 
-    .video-section h1 {
+    .the-voice-section h1 {
         padding-top: 20px;;
         margin: 0;
     }
@@ -603,5 +648,94 @@ nav .fa-bars {
     
     }
     
+
+}
+
+/*---------HOME PAGE STYLING END-----------*/
+
+
+
+/*---------ABOUT PAGE START-----------*/
+
+.about-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px 6%;
+    position: fixed;
+    border-bottom: 1px solid rgba(235, 235, 255, 0.295) ;
+    background-color: #230426;
+}
+
+
+.about-page-body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(2, 23, 13, 0.246)), url(images/background-4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-content{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.about-text {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-text h2, p {
+    color:#000000;
+}
+
+.about-image, .about-text {
+    width: 35%;
+    height: 600px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #000000;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+@media(max-width: 700px) {
+    .about-content {
+        flex-direction: column;
+        gap: 0;
+        padding-top: 120px;
+    }
+
+    .about-image, .about-text {
+        width: 400px;
+        height: 500px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid #000000;
+    }
+
+
 
 }
