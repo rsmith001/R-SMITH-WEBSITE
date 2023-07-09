@@ -449,14 +449,14 @@ form input {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(210, 178, 185, 0.998);
+    background-color: rgba(51, 17, 62, 0.998);
     padding: 20px;
     margin-top: 90px;
-
+    border-top: 2px solid rgb(7, 6, 6);
 }
 
 .footer .fa-brands, p {
-    color: rgb(51, 147, 131);
+    color: rgb(221, 255, 249);
     font-size: 1rem;
 
 }
