@@ -184,17 +184,23 @@ html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.home-page-text p::first-letter{
+    font-size: 6rem;
+    color:#900081;
+    font-weight: bold;
+}
+
 .home-page p span {
     color:#fff;
     font-size: 1.2rem;
 }
 
 .home-page p a {
-    color: #ff00aa;
+    color: #ff2323;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 5px;
-    padding-left: 30px;
+    padding-left: 15px;
 
 }
 /*home-page end*/
@@ -431,7 +437,7 @@ cursor: pointer;
     text-align: center;
 }
 
-.updates h1, .articles-div-group P {
+.updates h1, .articles-div-group P, .book-now {
     text-align: center;
     letter-spacing: 5px;
     font-size: 1.2rem;
@@ -604,6 +610,16 @@ textarea {
 
     .home-page-text p {
      word-spacing: 5px;
+    }
+    .home-page-text p::first-letter{
+        font-size: 3rem;
+    }
+
+    .home-page p a {
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    
     }
 
     .the-voice-section {
@@ -812,9 +828,7 @@ textarea {
         background-color: white;
         border: 2px solid #000000;
     }
-
-
-    
+  
     .articles-div-group{
         gap: 10px;
     }
@@ -848,3 +862,35 @@ textarea {
     }
     
 }
+
+
+
+
+
+.service-page-body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/back--ground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-job {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 120px 0 30px 30px;
+
+}
+
+.service-content p {
+    color: white;
+    text-align: center;
+}
+
