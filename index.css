@@ -26,7 +26,7 @@ html {
   }
 
 /*------------home-nav styling start--------------*/
-    .home-nav, .about-nav {
+    .home-nav {
         width: 100%;
         display: flex;
         align-items: center;
@@ -38,7 +38,7 @@ html {
         background-color: rgba(0, 0, 0, 0.937);
     }
 
-    .home-nav h1, .about-nav h1 {
+    .home-nav h1 {
         font-size: 3rem;
         background: linear-gradient(to right, rgba(173, 0, 247, 0.4), rgba(255, 0, 247, 0.7));
         -webkit-background-clip: text;
@@ -56,7 +56,7 @@ html {
      .nav-links ul li a,
       .icons a,
       .musics a,
-      .video a  {
+      .video a{
         text-decoration: none;
     }
 
@@ -116,7 +116,7 @@ html {
 }
 
 
-.home-nav  .fa-brands, .about-nav .fa-brands {
+.home-nav  .fa-brands {
     color: #fff;
     font-size: 1.8rem;
     
@@ -146,6 +146,7 @@ html {
 }
 
 .home-page-image {
+    margin-top: 40px;
     width: 550px;
     height: 500px;
     padding: 10px;
@@ -177,6 +178,7 @@ html {
 }
 
 .home-page-text p {
+    margin: 0 auto;
     text-align:center;
     color: #fff;
     font-size: 1.2rem;
@@ -211,7 +213,7 @@ html {
     width: 100%;
     min-height: 100vh;
     border-bottom: 2px solid rgb(152, 149, 149) ;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +276,7 @@ cursor: pointer;
 
 /*---------video-section end------------*/
 
-.home-nav .fa-solid, .about-nav .fa-solid {
+.home-nav .fa-solid{
     display: none;
 }
 
@@ -515,21 +517,27 @@ textarea {
     border-top: 2px solid rgb(7, 6, 6);
 }
 
-.footer .fa-brands, p {
+.footer .fa-brands {
     color: rgb(221, 255, 249);
-    font-size: 1rem;
+}
+
+.privacy-right {
+    color: white;
+    text-decoration-color: rgb(213, 196, 196);
+    font-size: .8rem;
+}
+
+@media (max-width: 1536px) {
 
 }
 
 
 @media(max-width: 700px) {
-    .home-nav, .about-nav {
-        justify-content: space-between;
-        padding: 10px 4%;
+    .home-nav{
+        justify-content: space-around;
     }
-    .home-nav h1, .about-nav h1 {
-        font-size: 2rem;
-        margin-left: 5px;
+    .home-nav h1 {
+        font-size: 1.7rem;
     }
 
     .icons {
@@ -539,6 +547,9 @@ textarea {
         gap: 30px;
     }
 
+.icons .fa-brands{
+    font-size: 1.2rem;
+}
 
     .nav-links {
         position: absolute;
@@ -560,7 +571,7 @@ textarea {
         gap: 40px;
 }
 
-    .home-nav .fa-solid, .about-nav .fa-solid {
+    .home-nav .fa-solid {
     display: block;
     color: rgba(188, 59, 184, 0.7);
     cursor: pointer;
@@ -569,7 +580,7 @@ textarea {
     margin-top: 10px;
 }
 
-.home-nav .fa-bars, .about-nav .fa-bars {
+.home-nav .fa-bars {
     margin-left: 50px;
     color: rgba(188, 59, 184, 0.7);
     font-size: 2rem;
@@ -647,10 +658,8 @@ textarea {
         width: 350px;
         height: 220px;
     }
-}
 
-@media(max-width: 700px) {
-    .videos {
+     .videos {
         flex-direction: column;
         gap: 10px;
     }
@@ -688,11 +697,199 @@ textarea {
 
     .footer .fa-brands {
         font-size: 1rem;
-    
     }
     
-
 }
+
+@media(max-width: 596px) {
+    .home-nav{
+        justify-content: space-around;
+    }
+    .home-nav h1 {
+        font-size: 1rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+.icons .fa-brands{
+    font-size: 1rem;
+}
+
+    .nav-links {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+   .nav-links ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 30px;
+        gap: 40px;
+}
+
+    .home-nav .fa-xmark {
+    display: block;
+    color: rgba(188, 59, 184, 0.7);
+    cursor: pointer;
+    font-size: 1.9rem;
+    margin-left: 145px;
+    margin-top: 30px;
+}
+
+.home-nav .fa-bars {
+    margin-left: 70px;
+    color: rgba(188, 59, 184, 0.7);
+    font-size: 1.4rem;
+    margin-top: 40
+}
+
+    .home-page-content {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    .home-page-image {
+        height: 317px;
+    }
+    
+    
+    .home-page-text h3 {
+        font-size: 1rem;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+    }
+
+    .home-page-text p {
+     word-spacing: 1px;
+     margin: 0;
+    }
+    .home-page-text p::first-letter{
+        font-size: 1.4rem;
+    }
+
+    .home-page p a {
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    
+    }
+
+    .the-voice-section {
+        width: 100%;
+        gap: 10px;
+        z-index: -1;
+    }
+
+    .the-voice-section .videos {
+        padding-top: 10px;
+        margin-top: 0;
+    }
+
+    iframe {
+        width: 300px;
+        height: 220px;
+    }
+
+    .rsmith-musicvideo-section h1 {
+        font-size: 1rem;
+        word-spacing: 1px;
+    }
+    
+    .updates h1 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    .footer .fa-brands {
+        font-size: 1rem;
+    }
+
+    .privacy-right {
+        color: white;
+        text-decoration-color: rgb(213, 196, 196);
+        font-size: .3rem;
+    }
+
+
+
+    .updates {
+        width: 100%;
+        margin: 0;    
+    }
+    
+    .updates span {
+        color:rgb(255, 255, 255);
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    
+    form {
+        width: 380px;
+        height: 490px;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: rgba(147, 28, 151, 0.6);
+        border-radius: 2%;
+        border:  2 px solid #d00909;
+        
+    }
+    
+    form  label {
+        color: #fff;
+    }
+    
+    form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        border: none;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 110px;
+        padding: 10px;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .updates button {
+        cursor: pointer;
+        border-radius: 5px;
+        
+    }
+}
+
+
 
 /*---------HOME PAGE STYLING END-----------*/
 
@@ -813,12 +1010,39 @@ textarea {
     
 }
 
+.service-page-body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/back--ground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-job {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 120px 0 30px 30px;
+
+}
+
+.service-content p {
+    color: white;
+    text-align: center;
+}
+
 
 @media(max-width: 700px) {
     .about-content {
         flex-direction: column;
-        gap: 0;
-        padding-top: 100px;
+        gap: 20px;
+        padding-top: 80px;
     }
 
     .about-image, .about-text {
@@ -863,34 +1087,4 @@ textarea {
     
 }
 
-
-
-
-
-.service-page-body:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/back--ground.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.service-job {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 120px 0 30px 30px;
-
-}
-
-.service-content p {
-    color: white;
-    text-align: center;
-}
 
