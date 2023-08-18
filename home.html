@@ -13,15 +13,17 @@
 <!--BODY SECTION-->
 <body class="home-page-body">
         <nav class="home-nav">
-                <h1><a href="home.html" class="logo">RSmith</a></h1>
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
+            </div>
+            <div>
+                <h1><a href="home.html" class="logo">RSmith</a></h1>
             </div>
             <div class="icons">
                 <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -44,13 +46,12 @@
                     <marquee>WELCOME TO MY WORLD!</marquee>
                     <h1>R Smith...</h1>
                     <br>
-                    <P>Auteur, compositeur, chanteur et musicien, R Smith baigne depuis son enfance dans 
-                        l’univers musical.
-                        De la chaire de l’église de son père à The Voice Dominicana aujourd’hui, 
-                        Jean Ricard Smith, de son vrai nom, ne souhaite qu’une chose : vivre pleinement 
-                        de sa passion. Le chanteur s’est confié, le temps d’une entrevue, à Ticket Magazine. <br/>  
-                        <span>à lire sur:</span> <a target="_blank" href="https://shorturl.at/jrsM0">
-                            <i>Le Nouveliste...</i></a></P>
+                    <P>What if I offer you 100% of what you are looking for today, Would you be opposed to that??? 
+                        It is so important in life to share your talent and skills with everyone that you have the 
+                        chance to meet. Meeting you today through my personal website is a huge opportunity for me 
+                        to show up my art and skills to you so we could get in touch and do business together. 
+                        Here you will find most of my realizations throughout my <span class="danger">MUSICAL</span> and <span class="danger">WEB DEVELOPMENT</span> career. 
+                        Make sure you do not miss a single piece of that!</P>
                 </div>
 
             </div>
@@ -138,11 +139,11 @@
 
     </section>
 
-    <section class="updates">
+    <section class="updates" id="book-now">
         <span>TEXT ME! <br> (809) 397 6129</span>
         <div class="divider"></div>
         <h1>FOR BOOKING</h1>
-        <form action="https://formsubmit.co/https://formsubmit.co/el/zopiyu" method="POST" id="book-now">
+        <form action="https://formsubmit.co/https://formsubmit.co/el/zopiyu" method="POST">
             <label for="roduction-name">
                 PRODUCTION NAME
                 <input id="production-name" name="production-name" placeholder="name..." required type="text">
@@ -150,7 +151,9 @@
 
             <label for="phone-number">
                 PHONE NUMBER
-                <input id="phone-number" name="phone-number" placeholder="+1 (345) 545 2828  " required type="number">
+                <input id="num" 
+                name="num" placeholder="xxx-xxx-xxxx" 
+                required type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </label>
 
             <label for="email">
@@ -159,7 +162,6 @@
             </label>
             <textarea name="comment" id="comment" placeholder="leave your message here..."></textarea>
             <button id="subscribe" type="subscribe" value="SUBSCRIBE">BOOK NOW</button>
-
         </form>
 
         <a target="_blank" href="https://paypal.me/shop32online?country.x=DO&locale.x=en_US"><button>SUPPORT ME</button></a>
@@ -168,22 +170,22 @@
 
     <div class="footer">
         <div class="foot-1">
-        <div>
-            <p><a class="privacy-right" href="">all rights reserved</a></p>
-        </div>
-        <div class="icons">
-            <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://shorturl.at/zEST7" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://shorturl.at/vMU02"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://shorturl.at/qAEI5" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://shorturl.at/bfMP6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <div>
-            <p><a class="privacy-right" href="privacy.html">privacy and policy</a></p>
-        </div>
-        </div>
+            <div>
+                <p><a class="privacy-right" href="privacy.html">privacy and policy</a></p>
+            </div>
+            <div class="icons">
+                <a href="https://shorturl.at/dyFP8" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://shorturl.at/zEST7" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://shorturl.at/vMU02"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://shorturl.at/qAEI5" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://shorturl.at/bfMP6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+                <p>© 2023 - R Smith, All Rights Reserved</p>
+            </div>
+            </div>
             <div class="host">
-                <p>Website made from scratch and hosted by by <span>R Smith</span> <a href="#book-now"><i>BOOK US</i></a> now using the form for any event </p> 
+                <p>Website made from scratch and hosted by by <span>R Smith</span> <a href="#book-now"><i class="danger">BOOK US</i></a> now using the form above for any event </p> 
                 <p>or professional Website to grow up your Business or Carreer!</p>
             </div>
     

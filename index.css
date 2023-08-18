@@ -9,13 +9,14 @@ html {
     scroll-snap-type: proximity;
 }
 
-
-
 /*---------HOME PAGE STYLING START-----------*/
 
 .home-page-body::before, 
 .about-page-body::before,
-.service-page-body:before {
+.service-page-body::before,
+.privacy-body::before,
+.contact-body::before,
+right-body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -38,12 +39,14 @@ html {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: row;
-        padding: 20px 6%;
+        gap: 100px;
+        padding: 20px 50px;
         position: fixed;
         border-bottom: 1px solid rgba(0, 0, 0, 0.4) ;
         background-color: rgba(0, 0, 0, 0.937);
+        margin: 0 auto;
     }
 
     .home-nav h1 {
@@ -56,31 +59,32 @@ html {
         border-radius: 30%;
         border: 2px solid rgba(248, 66, 242, 0.7);
         background-color: black;
-        font-weight: bold;
-
+        text-align: center;
     }
 
     .home-nav h1 a,
      .nav-links ul li a,
       .icons a,
       .musics a,
-      .video a, .codepen h2 a{
+      .video a, 
+      .codepen h2 a,
+      .service-content button a{
         text-decoration: none;
     }
 
 
-.nav-links ul {
+.nav-links ul, .icons {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        gap: 40px;
+        margin: 0 auto;
+        gap: 50px;
 }
 
 .nav-links ul li {
     font-size: 1.5em;
     font-style: oblique;
-    padding-left: 1rem;
     list-style: none;
     display: inline-block;
     position: relative;
@@ -106,7 +110,8 @@ html {
 .nav-links ul li a, 
 .musics a,
 .video a,
-.codepen h2 a {
+.codepen h2 a, 
+.service-content button a {
     color:rgba(248, 254, 255, 0.855);
 }
 
@@ -115,22 +120,16 @@ html {
     transition: 0.6s;
 }
 
-.icons {
-    margin: 0 0 0 30px;
-    display: flex;
-    flex-direction: flex-end;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
-}
-
-
 .home-nav  .fa-brands {
     color: #fff;
     font-size: 1.8rem;
     
 }
 /*nav styling end*/
+
+
+
+
 
 /*home-page start*/
 .home-page {
@@ -147,17 +146,18 @@ html {
 
 .home-page-content {
     height: 100vh;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 70px 40px 40px 40px;
     gap: 30px;
+    margin: 0 auto;
 }
 
 .home-page-image {
-    width: 500px;
+    width: 560px;
     height: 480px;
     padding: 10px;
     background-color:#ffffff;
@@ -188,18 +188,21 @@ marquee {
     z-index: -1;
 }
 
-.home-page-text h1 {
+.home-page-text h1, 
+.about-text h2 {
     display: none;
 }
 
-.home-page-text p {
+.home-page-text p, 
+.about-text p {
     color: #fff;
     font-size: 1.2rem;
     word-spacing: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.home-page-text p::first-letter{
+.home-page-text p::first-letter, 
+.about-text p::first-letter{
     font-size: 4rem;
     color:#900081;
     font-weight: bold;
@@ -272,6 +275,12 @@ background: transparent;
 cursor: pointer;
 }
 
+.danger {
+    color:#d00909;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 /*---------video-section end------------*/
 
 .home-nav .fa-solid{
@@ -287,6 +296,7 @@ cursor: pointer;
     align-items: center;
     padding: 30px 0;
     border-bottom: 2px solid rgb(152, 149, 149) ;
+    margin: 0 auto;
 }
 
 .rsmith-musicvideo-section h1 {
@@ -318,7 +328,9 @@ cursor: pointer;
     justify-content: cetner;
 }
 
-.musics h3, button, .codepen h2 {
+.musics h3, 
+button, 
+.codepen h2 {
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -411,29 +423,30 @@ cursor: pointer;
 
 
 .updates {
-    width: 90%;
+    width: 100%;
     height: 100vh;
-    margin: 30px auto;
+    margin: 0 auto;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 8px;
 }
 
 .updates span {
     color:rgb(255, 255, 255);
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 5rem;
     letter-spacing: 3px;
     text-align: center;
 }
 
-.updates h1, .articles-div-group P, .book-now {
+.updates h1, 
+.articles-div-group P, 
+.book-now {
     text-align: center;
     letter-spacing: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:rgba(173, 0, 247, 0.4);
     text-shadow: 1px 1px 1px #f2ecec;
     border: 7px solid rgb(98, 21, 96);
@@ -447,13 +460,15 @@ cursor: pointer;
 
 form {
     width: 500px;
-    height: 490px;
+    height: 450px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     background-color: rgba(147, 28, 151, 0.6);
     border-radius: 2%;
     border:  2 px solid #d00909;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
 }
 
 form  label {
@@ -464,12 +479,20 @@ form input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
     font-size: 1.1rem;
     border: none;
     font-weight: bold;
     font-style: italic;
+    outline: none;
+
+}
+
+#num:valid{
+    border-color: green;
+}
+
+#num:focus:invalid {
+    border-color: red;
 }
 
 textarea {
@@ -482,7 +505,8 @@ textarea {
     margin-top: 10px;
 }
 
-.updates button {
+.updates button,
+ .service-content button {
     cursor: pointer;
     border-radius: 5px;
     border: 7px solid rgb(98, 21, 96);
@@ -490,7 +514,8 @@ textarea {
     
 }
 
-.updates button:hover {
+.updates button:hover,
+.service-content button:hover {
     background-color: rgb(1, 255, 1);
     color: black;
     transition: 1s;
@@ -500,13 +525,10 @@ textarea {
     width: 100%;
     height: 100vh;
     display: flex;
-    gap: 80px;
+    gap: 50px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: transparent;
-    padding:0;
-    border-top: 1px solid rgb(251, 248, 248);
+    margin: 0 auto;
 }
 
 .foot-1 {
@@ -527,7 +549,7 @@ textarea {
     transition: .3s;
 }
 
-.privacy-right {
+.privacy-right, .footer p a, .about-text p a {
     color: white;
     text-decoration-color: rgb(213, 196, 196);
     font-size: 2rem;
@@ -542,10 +564,6 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.host p a {
-    color: rgb(222, 120, 120);
 }
 
 @media (max-width: 1536px) {
@@ -693,15 +711,12 @@ textarea {
 
     form {
         width: 360px;
-        height: 400px;
-        padding: 30px;
+        padding: 5px;
         border-radius: 2%;
     }
     
-
-    
     .updates h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .footer {
@@ -712,9 +727,6 @@ textarea {
         font-size: 0.7rem;
     }
 
-    .footer .fa-brands {
-        font-size: 1rem;
-    }
     
 }
 
@@ -806,18 +818,23 @@ textarea {
 }
 
 .about-text {
-    font-size: large;
-    word-spacing: 5px;
+    font-size: 1rem;
+    word-spacing: 2px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: transparent;
+    padding: 100px 0 10px;
 }
 
+
+.about-image {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
 .about-image, .about-text {
     width: 33%;
     height: 560px;
-    padding: 10px;
-    background-color: white;
     border: 2px solid #000000;
     border-radius: 15px;
     margin-top: 110px;
@@ -966,7 +983,6 @@ textarea {
 }
 
 
-}
 /*---------ABOUT PAGE STYLING END-----------*/
 
 
@@ -976,27 +992,96 @@ textarea {
 
 
 /*---------SERVICE PAGE STYLING START-----------*/
-.service-page-body:before {
-    background-image: linear-gradient(rgba(17, 10, 4, 0.781), rgba(34, 16, 2, 0.6)), url(images/back--ground.jpeg);
+.service-page-body::before {
+    background-image: linear-gradient(rgba(20, 42, 57, 0.781), rgba(67, 61, 56, 0.6)), url(images/background-2.jpg);
 }
 
-.service-job {
+.service-content {
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
-    padding: 120px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 60px;
 
 }
 
-.service-content{
-    max-width: 100%;
-}
-
-.service-content p {
-    color: white;
+.service-content h1 {
     text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
+.service-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-content ul li {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    list-style-type: upper-roman;
+}
+
+
+.service-content button {
+    width: 400px;
+    
+}
+
+
 /*---------SERVICE PAGE STYLING END-----------*/
 
 
 
+/*---------CONTACT PAGE STYLING START-----------*/
+.contact-body::before {
+    background-image:  linear-gradient(rgba(15, 3, 55, 0.781), rgba(3, 56, 62, 0.6)), url(images/background-7.jpg);
+}
+
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+
+/*---------CONTACT PAGE STYLING END-----------*/
+
+/*---------PRIVACY PAGE STYLING START-----------*/
+
+.privacy-body::BEFORE {
+    background-image:  linear-gradient(rgba(15, 3, 55, 0.781), rgba(3, 56, 62, 0.6)), url(images/background-7.jpg);
+}
+
+.privacy-body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.privacy-text {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.privacy-text .title {
+    padding: 30px 0;
+}
+
+.privacy-text ul {
+    margin-left: 50px;
+}
+
+/*---------PRIVACY PAGE STYLING END-----------*/
