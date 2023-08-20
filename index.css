@@ -64,7 +64,8 @@ right-body::before {
 
     .home-nav h1 a,
      .nav-links ul li a,
-      .icons a,
+      .icons a, 
+      .footer-icons a,
       .musics a,
       .video a, 
       .codepen h2 a,
@@ -73,7 +74,7 @@ right-body::before {
     }
 
 
-.nav-links ul, .icons {
+.nav-links ul, .icons, .footer-icons {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -146,14 +147,14 @@ right-body::before {
 
 .home-page-content {
     height: 100vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 70px 40px 40px 40px;
-    gap: 30px;
-    margin: 0 auto;
+    margin: 0 50px;
+    gap: 50px;
 }
 
 .home-page-image {
@@ -192,6 +193,7 @@ marquee {
 .about-text h2 {
     display: none;
 }
+
 
 .home-page-text p, 
 .about-text p {
@@ -325,7 +327,7 @@ cursor: pointer;
     gap: 10px;
     align-items: center;
     text-align: center;
-    justify-content: cetner;
+    justify-content: center;
 }
 
 .musics h3, 
@@ -529,6 +531,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .foot-1 {
@@ -539,12 +542,12 @@ textarea {
     align-items: center;
 }
 
-.footer .icons .fa-brands {
+.footer-icons .fa-brands {
     color: rgb(221, 255, 249);
     font-size: 3rem;
 }
 
-.footer .icons .fa-brands:hover{
+.footer-icons .fa-brands:hover{
     font-size: 3.3rem;
     transition: .3s;
 }
@@ -566,203 +569,9 @@ textarea {
     align-items: center;
 }
 
-@media (max-width: 1536px) {
-
-}
-
-@media(max-width: 700px) {
-    .home-nav {
-        gap: 50px;
-    }
-
-    .home-nav h1 {
-        font-size: 1.7rem;
-    }
-
-    .icons {
-        justify-content: space-around;
-        gap: 30px;
-    }
-
-.icons .fa-brands{
-    font-size: 1.2rem;
-}
-
-    .nav-links {
-        position: absolute;
-        background: rgba(0, 0, 0, 0.9);
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        z-index: 4;
-        transition: 0.5s;
-    }
-
-   .nav-links ul {
-        flex-direction: column;
-        justify-content: space-around;
-        padding-top: 30px;
-        gap: 40px;
-}
-
-    .home-nav .fa-solid {
-    display: block;
-    color: rgba(188, 59, 184, 0.7);
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.home-nav .fa-xmark {
-    color: rgba(188, 59, 184, 0.7);
-    font-size: 2rem;
-    margin-left: 100px;
-    margin-top: 25px;
-}
-
-    .home-page-content {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: -50px;
-    }
-
-    .home-page-image {
-        display: none;
-    }
-    
-    
-    .home-page-text {
-        padding: 5px;
-        width: 600px;
-    
-    }
-    
-    marquee {
-        font-size: 1.6rem;
-        word-spacing: 5px;
-        letter-spacing: 2px;
-        margin-bottom: 50px;
-    }
-
-    .home-page-text h1 {
-        display: block;
-        color:#f84337;
-        font-size: 60px;
-    }
-
-    .home-page-text p {
-     word-spacing: 5px;
-    }
-    .home-page-text p::first-letter{
-        font-size: 3rem;
-    }
-
-    .home-page p a {
-        font-size: 15px;
-        letter-spacing: 2px;
-        padding-left: 10px;
-    
-    }
-
-    .the-voice-section .videos, .video-2 {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .the-voice-section h1 {
-        padding-top: 20px;;
-        margin: 0;
-    }
 
 
-    iframe {
-        width: 600px;
-        height: 300px;
-    }
 
-     .videos {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .music-div {
-        flex-direction: column;
-    }
-    .rsmith-musicvideo-section h1 {
-        font-size: 2rem;
-        padding: 0;
-        word-spacing: 3px;
-        letter-spacing: 1px;;
-    }
-
-    form {
-        width: 360px;
-        padding: 5px;
-        border-radius: 2%;
-    }
-    
-    .updates h1 {
-        font-size: 1rem;
-    }
-
-    .footer {
-        padding: 25px;
-    }
-
-    .footer p {
-        font-size: 0.7rem;
-    }
-
-    
-}
-
-@media(max-width: 540px) {
-    .home-page-content {
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .home-page-text {
-        padding: 5px;
-        width: 440px;
-    
-    }
-
-    iframe {
-        width: 500px;
-        height: 450px;
-    }
-}
-
-@media(max-width: 412px) {
-    .home-page-text {
-        padding: 5px;
-        width: 380px;
-    
-    }
-
-    iframe {
-        width: 380px;
-        height: 200px;
-    }
-
-
-}
-
-@media(max-width: 390px) {
-    .home-page-text {
-        padding: 5px;
-        width: 330px;
-    
-    }
-
-    iframe {
-        width: 330px;
-        height: 200px;
-    }
-
-
-}
 
 
 
@@ -883,90 +692,6 @@ textarea {
     
 }
 
-@media(max-width: 700px) {
-    .about-content {
-        gap: 20px;
-    }
-
-    .about-image, .about-text {
-        width: 310px;
-        height: 430px;
-    }
-  
-    .articles-div-group{
-        gap: 10px;
-    }
-    
-    .articles-div {
-        gap: 10px;
-        flex-direction: column;
-        padding-top: 13px;
-
-    }
-    
-    .articles {
-        width: 600px;
-        height: 650px;
-    }
-    
-    form {
-        width: 360px;
-        height: 500px;
-        padding: 30px;
-        border-radius: 2%;
-    }
-
-    .articles-div-group P {
-        width: 400px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-size: 0.6rem;
-    
-    }
-    
-}
-
-@media(max-width: 540px) {
-    .about-content{
-        display: flex;
-        flex-direction: column;
-    }
-    .about-image, .about-text, .articles {
-        width: 530px;
-        height: 680px;
-    }
-  
-    .about-text {
-        margin: 10px 0;
-    }
-
-
-    .updates {
-        margin-bottom: 20px;
-    }
-    
-}
-
-@media(max-width: 390px) {
-    .about-content{
-        display: flex;
-        flex-direction: column;
-    }
-    .about-image, .about-text, .articles {
-        width: 380px;
-        height: 400px;
-    }
-  
-    .about-text {
-        margin: 10px 0;
-    }
-
-
-    .updates {
-        margin-bottom: 20px;
-    }
-    
-}
 
 
 /*---------ABOUT PAGE STYLING END-----------*/
@@ -1071,3 +796,323 @@ textarea {
 }
 
 /*---------PRIVACY PAGE STYLING END-----------*/
+
+
+
+/*--MEDIA QUERIES ALL--*/
+
+@media (max-width: 1200px) {
+    .home-page-content{
+        width: 100%;
+    }
+
+    .home-page-content {
+        padding: 10px;
+        gap: 30px;
+    }
+
+    form {
+        width: 590px;
+        height: 680px;
+        padding: 15px;
+        border:  2 px solid #d00909;
+        gap: 40px; 
+        margin-top: 30px; 
+    }
+
+    form input {
+        padding: 20px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    
+    }
+
+    textarea {
+        width: 100%;
+        height: 110px;
+        padding: 10px;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .icons{ 
+        display: none
+    }
+
+    .about-image, .about-text {
+        width: 40%;
+    }
+
+    .home-page-image {
+        width: 590px;
+        height: 480px;
+
+    }
+
+    .host {
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .home-page-content {
+        width: 90%;
+        margin: 0 50px;
+        gap: 50px;
+    }
+
+    .music-div {
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    .musics {
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .foto {
+        width: 310px;
+        height: 288px;
+    }
+    
+    .videos {
+        gap: 10px;
+    }
+
+    .video iframe {
+        width: 476px;
+        height: 236px;
+    }
+
+    .updates {
+        height: 100vh;
+        padding-top: 150px;
+    }
+
+    .footer {
+        height: 40vh;
+    }
+
+    form {
+        padding: 30px;
+        height: 580px;
+    }
+
+    form input {
+        padding: 20px;
+        font-size: 1.4rem;
+    
+    }
+    
+}
+
+@media(max-width: 768px) {
+
+    .home-nav h1 {
+        font-size: 1.9rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 4;
+        transition: 0.5s;
+    }
+
+   .nav-links ul {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 30px;
+        gap: 40px;
+}
+
+    .home-nav .fa-solid {
+    display: block;
+    color: rgba(188, 59, 184, 0.7);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.home-nav .fa-xmark {
+    color: rgba(188, 59, 184, 0.7);
+    font-size: 2.6rem;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+
+    .home-page-content {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: -50px;
+    
+    }
+
+    .home-page-image {
+        display: none;
+    }
+    
+    
+    .home-page-text {
+        padding: 5px;
+        width: 600px;
+    
+    }
+    
+    marquee {
+        font-size: 1.6rem;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+    }
+
+    .home-page-text h1 {
+        display: block;
+        color:#f84337;
+        font-size: 60px;
+    }
+
+    .home-page-text p {
+     word-spacing: 5px;
+    }
+    .home-page-text p::first-letter{
+        font-size: 3rem;
+    }
+
+    .home-page p a {
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    
+    }
+
+    .the-voice-section .videos, .video-2 {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .the-voice-section h1 {
+        padding-top: 20px;;
+        margin: 0;
+    }
+
+    
+    .foto {
+        width: 520px;
+        height: 498px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 300px;
+    }
+
+     .videos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .music-div {
+        flex-direction: column;
+    }
+    .rsmith-musicvideo-section h1 {
+        font-size: 2rem;
+        padding: 0;
+        word-spacing: 3px;
+        letter-spacing: 1px;;
+    }
+    .updates {
+        height: 100vh;
+        padding-top: 150px;
+    }
+
+    .footer {
+        height: 40vh;
+    }
+
+    form {
+        padding: 30px;
+        height: 580px;
+    }
+
+    form input {
+        padding: 20px;
+        font-size: 1.4rem;
+    
+    }
+
+    .host {
+        padding: 0 50px;
+    }
+
+    .about-image, .about-text {
+        width: 45%;
+        height: 50%;
+    }
+
+    .articles-div {
+        gap: 5px;
+    }
+
+    .articles {
+        width: 280px;
+        height: 480px;
+        padding: 5px;
+    }
+
+    .about-content {
+        height: 60vh;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    
+
+    .home-page {
+        width: 97%;
+    }
+    
+    .home-page-content {
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 70 40px;
+        margin: 0 20px;
+    }
+
+    iframe {
+       width:  580px;
+    }
+
+    form {
+        width: 500px;
+
+    }
+
+    .host p {
+        font-size: 1rem;
+    }
+
+
+
+}
