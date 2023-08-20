@@ -22,7 +22,7 @@ right-body::before {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    min-width: 1400px;
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1081,9 +1081,7 @@ textarea {
     
 }
 
-@media (max-width: 600px) {
-
-    
+@media (max-width: 576px) {
 
     .home-page {
         width: 97%;
@@ -1096,12 +1094,12 @@ textarea {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 70 40px;
+        padding: 50 30px;
         margin: 0 20px;
     }
 
     iframe {
-       width:  580px;
+       width:  500px;
     }
 
     form {
