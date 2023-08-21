@@ -57,10 +57,10 @@
         <span>TEXT ME! <br> (809) 397 6129</span>
         <div class="divider"></div>
         <h1>FOR BOOKING</h1>
-        <form action="https://formsubmit.co/https://formsubmit.co/el/zopiyu" method="POST">
+        <form onsubmit="sendEmail(); reset(); return false;" >
             <label for="roduction-name">
                 PRODUCTION NAME
-                <input id="production-name" name="production-name" placeholder="name..." required type="text">
+                <input id="name" name="name" placeholder="name..." required type="text">
             </label>
 
             <label for="phone-number">
@@ -120,6 +120,27 @@
         }
 
     </script>
+
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+             function sendEmail() {
+                    Email.send({
+                            Host : "smtp.gmail.com",
+                            Username : "smithsmith199400@gmail.com",
+                            Password : "Welcome2023@",
+                            To : 'jeanricardsmithofficial@gmail.com',
+                            From : document.getElementById("email").value,
+                            Subject : "Email From a user | www.rsmith.online",
+                            Body : "Name: " + document.getElementById("name").value 
+                            + "<br/> Email: " + document.getElementById("email").value 
+                            + "<br/> Phone Number: " + document.getElementById("num").value 
+                            + "<br/> Message: " + document.getElementById("comment").value 
+                        }).then(
+                                message => alert("Thank you for you interest in contacting R Smith! we receive your message and are coming back to you as soon as possible! ")
+                                );
+                        }
+        </script>
+
 </service>
 </body>
 </html>
