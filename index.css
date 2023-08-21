@@ -541,7 +541,6 @@ textarea {
     justify-content: center;
     margin: 0 auto;
     padding: 0;
-    border: 4px solid red;
 }
 
 .foot-1 {
@@ -550,7 +549,6 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 4px solid red;
 }
 
 .footer-icons .fa-brands {
@@ -620,7 +618,6 @@ textarea {
 
 .about {
 width: 90%;
-border: 4px solid red;
 margin: 0 auto;
 margin: 0 auto;
 }
@@ -635,7 +632,7 @@ margin: 0 auto;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    border: 2px solid rgb(218, 139, 235)
+    border-bottom: 2px solid rgb(218, 139, 235)
     
 }
 
@@ -648,7 +645,7 @@ margin: 0 auto;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: 2px solid rgb(218, 139, 235);
+    border-bottom: 2px solid rgb(218, 139, 235);
 
 }
 
@@ -797,7 +794,6 @@ margin: 0 auto;
     width: 90%;
     margin: 0 auto;
     padding-top: 100px;
-    border: 4px solid red;
 }
 
 
@@ -1089,12 +1085,7 @@ margin: 0 auto;
 }
 
 @media (max-width: 576px) {
-    .home-page-content {
-        border: 7px solid red;
-        margin: 0 auto;
-        padding: 0;
-        width: 60%;
-    }
+
 }
 
 @media (max-width: 375px) {
@@ -1242,7 +1233,7 @@ margin: 0 auto;
         margin: 0 auto;
         padding: 0;
         gap: 10px;
-        border: 2px solid rgb(218, 139, 235);
+        border-bottom: 2px solid rgb(218, 139, 235);
         gap: 5px;
         align-items: center;
         height: 100vh;
@@ -1254,7 +1245,6 @@ margin: 0 auto;
         border: 2px solid #000000;
         border-radius: 15px;
         margin: 0;
-        border: 4px solid blue;
     }
     
     .about-text {
@@ -1275,7 +1265,7 @@ margin: 0 auto;
     .articles-section {
         padding: 0;
         gap: 10px;
-        border: 2px solid rgb(218, 139, 235);
+        border-bottom: 2px solid rgb(218, 139, 235);
     }
     
     .articles-div-group p {
@@ -1293,10 +1283,21 @@ margin: 0 auto;
         width: 90%;
         margin: 0 auto;
         padding: 0;
-        border: 4px solid red;
+
     }
 
+    .service-content {
+        padding: 0;
+    }
 
+    .service-content ul {
+        align-items: flex-start;
+    }
+
+    .service-content ul li {
+        font-size: 1rem;
+
+    }
 
 
 }
