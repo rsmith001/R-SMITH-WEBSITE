@@ -51,7 +51,6 @@ html {
         border-bottom: 1px solid rgba(0, 0, 0, 0.4) ;
         background-color: rgba(0, 0, 0, 0.937);
         margin: 0 auto;
-        border: 3px solid red;
 
     }
 
@@ -89,7 +88,6 @@ html {
         flex-direction: row;
         margin: 0 auto;
         gap: 50px;
-        border: 3px solid red;
 }
 
 .nav-links ul li {
@@ -138,7 +136,7 @@ html {
 }
 
 .main-section {
-    border: 2px solid red;
+    margin: 0 auto;
 }
 /*nav styling end*/
 
@@ -146,12 +144,10 @@ html {
 
 
 /*home-page start*/
-.home-page-section {
-    margin: 150px 0 auto auto;
 
+.main-section {
+padding-top: 150px;
 }
-
-
 
 .home-page-content {
     height: 100vh;
@@ -162,7 +158,6 @@ html {
     gap: 50px;
     margin: 0 auto ;
     padding: 0;
-    border: 4px solid blue;
 }
 
 .home-page-image {
@@ -244,7 +239,6 @@ marquee {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
-    border: 4px solid blue;
 }
 
 .the-voice-section h1 {
@@ -313,7 +307,6 @@ cursor: pointer;
     padding: 30px 0;
     border-bottom: 2px solid rgb(152, 149, 149) ;
     margin: 0 auto;
-    border: 4px solid blue;
 }
 
 .rsmith-musicvideo-section h1 {
@@ -437,6 +430,10 @@ button {
     margin-top: 20px;
 }
 
+.home-page-content, .updates {
+    border-bottom: 1px solid white;
+}
+
 
 .updates {
     width: 90%;
@@ -446,7 +443,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: 4px solid blue;
 }
 
 .updates span {
@@ -546,7 +542,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    border: 4px solid blue;
 }
 
 .foot-1 {
@@ -560,6 +555,12 @@ textarea {
 .footer-icons .fa-brands {
     color: rgb(221, 255, 249);
     font-size: 3rem;
+}
+
+.footer-icons {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    gap: 20px;
 }
 
 .footer-icons .fa-brands:hover{
@@ -824,12 +825,12 @@ textarea {
         width:100%;
         height: 80px;
         justify-content: space-around;
+        gap: 60px;
     }
 
 
     .home-nav h1 {
         font-size: 2rem;
-        margin-left: 40px;
     }
 
     .icons {
@@ -860,6 +861,7 @@ textarea {
     color: rgba(188, 59, 184, 0.7);
     cursor: pointer;
     font-size: 2rem;
+    margin-left: 30px;
 }
 
 .home-nav .fa-xmark {
@@ -868,8 +870,13 @@ textarea {
     margin-left: 40px;
     margin-top: 23px;
 }
+
+.main-section {
+    padding: 0;
+}
+
 .home-page-section {
-    margin: 80px auto 0;
+    margin: 0 auto;
 
 }
 
@@ -1016,7 +1023,10 @@ textarea {
         align-items: center;
     }
 
-    iframe, .musics, .foto, form {
+    iframe, 
+    .musics,
+     .foto,
+      form {
        width:  500px;
     }
 
@@ -1085,6 +1095,11 @@ textarea {
     .main-section {
         margin: 0 auto;
         width: 100%;
+        padding: 0;
+    }
+
+    .home-page-content {
+        justify-content: flex-start;
     }
 
     .home-page-text h1 {
@@ -1125,7 +1140,9 @@ textarea {
         height: 90%;
      }
 
-     .musics button, .musics h3, .video h2 {
+     .musics button,
+      .musics h3,
+       .video h2 {
         width:  100%;
      }
 
