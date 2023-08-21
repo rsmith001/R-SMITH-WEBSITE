@@ -1146,9 +1146,17 @@ textarea {
         width:  100%;
      }
 
-     .musics button {
+     .musics button, .service-content button {
         font-size: 1rem;
      }
+
+     .service-content button  {
+        padding-right:  0;
+        padding-left: 0;
+        font-size: .6rem;
+        width: 200px;
+     }
+
 
      .video-1 {
         margin: 0;
@@ -1186,4 +1194,13 @@ textarea {
       .footer .privacy-right {
         font-size: .6rem;
     }
+
+    .contact-page, .service-main {
+        width: 98%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+
 }
