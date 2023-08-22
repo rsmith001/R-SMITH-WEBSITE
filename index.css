@@ -427,7 +427,7 @@ button {
     margin-top: 20px;
 }
 
-.home-page-content, .updates {
+.home-page-content {
     border-bottom: 1px solid white;
 }
 
@@ -533,7 +533,7 @@ textarea {
 }
 
 .footer {
-    width: 100%;
+    width: 90%;
     height: 100vh;
     display: flex;
     gap: 50px;
@@ -588,24 +588,17 @@ textarea {
 }
 
 
-
-
-
-
-
-
 /*---------HOME PAGE STYLING END-----------*/
 
+/*---------service PAGE STYLING start-----------*/
+.service-main {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 100vh;
+}
 
-
-
-
-
-
-
-
-
-
+/*---------service PAGE STYLING END-----------*/
 
 
 
@@ -981,6 +974,10 @@ margin: 0 auto;
         letter-spacing: 1px;;
     }
 
+    .updates{
+        width: 100%;
+    }
+
 
     form {
         padding: 20px;
@@ -1050,6 +1047,10 @@ margin: 0 auto;
        width:  500px;
     }
 
+    .updates {
+        width: 100%;
+    }
+
     .updates button {
         padding: 5px;
     }
@@ -1084,7 +1085,148 @@ margin: 0 auto;
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 596px) {
+
+   .nav-links ul {
+        padding-top: 5px;
+        gap: 30px;
+}
+
+
+    .home-page-content {
+        flex-direction: column;;
+        gap: 20px;
+        padding-top: 30px;
+    }
+    
+    .home-page-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-page-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-page-content p::first-letter,
+     .about-text p::first-letter {
+        font-size: 1rem;
+    }
+
+    .home-page-content p, .about-text p {
+        font-size: .6rem;
+        margin: 0;
+
+    }
+
+    iframe, .foto {
+        height: 250px;
+    }
+
+    
+
+    .updates {
+        padding: 0;
+        width: 90%;
+        border: none;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+        font-size: .6rem;
+    }
+
+    form input {
+        width: 260px;
+        padding: 2px;
+        font-size: .6rem;
+        border-radius: 1px;
+    }
+
+    form button {
+        font-size: .6rem;
+        padding: 2px;
+    }
+
+    textarea {
+        height: 50%;
+        padding: 2px;
+
+    }
+
+    .footer {
+        width: 90%;
+        padding-top: 30px;
+
+    }
+
+    .footer-icons .fa-brands {
+        font-size: 1rem;
+    }
+
+    .host p, .foot-1 p, .privacy-right {
+        font-size: .7rem;
+    }
+
+    .about-content{
+        padding: 150px auto 0;
+        gap: 10px;
+        border-bottom: 2px solid rgb(218, 139, 235);
+        width: 100%;
+        height: 100vh;
+        
+    }
+
+    .about-image, .about-text {
+        width: 240px;
+        height: 280px;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        margin-top: 30px;
+
+    }
+
+    .articles {
+        height: 300px;
+    }
+
+
+
+    .service-content {
+        width: 90%;
+        margin: 0 auto;
+        height: 100vh;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    .service-content h1 {
+        font-size: 1.5rem;
+        color:#900081;
+    }
+
+    .service-content ul {
+        gap: 10px;
+    }
+
+    .service-content ul li {
+        font-size: .7rem;
+    }
+
+    .service-content button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 200px;
+    }
 
 }
 
@@ -1115,7 +1257,7 @@ margin: 0 auto;
     }
 
     .home-page-content {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .home-page-text h1 {
@@ -1162,9 +1304,15 @@ margin: 0 auto;
         width:  100%;
      }
 
-     .musics button, .service-content button {
+     .musics button {
         font-size: 1rem;
      }
+
+     .service-content {
+        height: 100vh;
+    }
+
+
 
      .service-content button  {
         padding-right:  0;
@@ -1185,6 +1333,7 @@ margin: 0 auto;
 
      .updates {
         padding-top: 60px;
+        width: 90%;
      }
 
      form {
@@ -1192,8 +1341,11 @@ margin: 0 auto;
         padding-bottom: 5px;
     }
 
+
+
     form input {
         font-size: 1rem;
+        width: 180px;
 
     }
 
@@ -1205,7 +1357,7 @@ margin: 0 auto;
 
     .footer {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
 
      .footer-icons .fa-brands {
@@ -1230,18 +1382,19 @@ margin: 0 auto;
     
     /*--about media--*/
     .about-content{
-        margin: 0 auto;
-        padding: 0;
-        gap: 10px;
-        border-bottom: 2px solid rgb(218, 139, 235);
-        gap: 5px;
-        align-items: center;
+        width: 100%;
         height: 100vh;
+        margin: 0 auto;
+        padding-top: 80px;
+        gap: 0px;
+        border-bottom: 2px solid rgb(218, 139, 235);
+        align-items: center;
+        flex-direction: column;
     }
     
     .about-image, .about-text {
-        width: 200px;
-        height: 210px;
+        width: 100%;
+        height: 400px;
         border: 2px solid #000000;
         border-radius: 15px;
         margin: 0;
@@ -1261,10 +1414,15 @@ margin: 0 auto;
     .about-text p::first-letter {
         font-size: 1rem;
     }
+
+    .articles-div, .articles-div-group {
+        padding: 0;
+        gap: 5px;
+    }
     
     .articles-section {
         padding: 0;
-        gap: 10px;
+        gap: 5px;
         border-bottom: 2px solid rgb(218, 139, 235);
     }
     
@@ -1275,8 +1433,9 @@ margin: 0 auto;
     
     .articles {
         width: 100px;
-        height: 200px;
-        padding: 10px;
+        height: 150px;
+        padding: 5px;
+        margin: 0;
     }
     
     .contact-page {
